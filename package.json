@@ -1,0 +1,38 @@
+{
+  "name": "PathCleaner",
+  "version": "2.0.0",
+  "description": "Path cleaning command line utility",
+  "main": "src/path-cleaner.ts",
+  "bin": "./path-cleaner.js",
+  "author": "Jason D Shaw",
+  "license": "MIT",
+  "preferGlobal": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/path-cleaner.ts",
+    "test": "cross-env TS_NODE_FILES=true mocha -exit -require ts-node/register -colors test/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/core-js": "^2.5.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "12.12.11",
+    "@types/tmp": "^0.1.0",
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^7.0.0",
+    "ts-node": "^8.6.2",
+    "typemoq": "^2.1.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/commander": "^2.12.2",
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "core-js": "^3.1.2",
+    "inquirer": "^6.3.1",
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.13"
+  }
+}

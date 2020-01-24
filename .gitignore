@@ -1,0 +1,7 @@
+# Build related
+coverage
+dist
+node_modules
+
+# Yarn
+yarn-error.log
